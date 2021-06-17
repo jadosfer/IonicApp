@@ -1,18 +1,29 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="danger">
-    <ion-title>Card</ion-title>
+    <ion-title>Tabs Layout</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-button expand="block" id="btn-cancel"><ion-icon slot="start" name="close-circle-outline"></ion-icon>Clear</ion-button>
+<ion-content [fullscreen]="true">
+  <ion-tabs>
+
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home">
+        <ion-label>Home</ion-label>
+        <ion-icon name="home"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="settings">
+        <ion-label>Settings</ion-label>
+        <ion-icon name="settings"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="settings">
+        <ion-label>Account</ion-label>
+        <ion-icon name="settings"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>
 
-<ion-footer>
-  <ion-toolbar color="dark">
-    <ion-button expand="full" color="dark" id="btn-cancel">Submit</ion-button>
-  </ion-toolbar>
-</ion-footer>
 
 
 
